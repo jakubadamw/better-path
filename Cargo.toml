@@ -1,0 +1,17 @@
+[package]
+name = "better-path"
+version = "0.0.1"
+description = "A better Path type with stronger typing around absolute/relative kinds"
+authors = ["Jakub Wieczorek <jakubw@jakubw.eu>"]
+keywords = ["path", "pathbuf", "typestate"]
+license = "Apache-2.0"
+edition = "2021"
+
+[features]
+default = []
+serde = ["dep:serde"]
+
+[dependencies]
+ref-cast = "1"
+serde = { version = "1", optional = true }
+thiserror = "1"
